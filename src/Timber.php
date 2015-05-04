@@ -43,7 +43,7 @@
 
 class Timber {
 
-  const CONFIG = dirname(__FILE__).'/config/Timber.config.php';
+  const CONFIG = 'config/Timber.config.php';
 
   const DEBUG = 100;
   const WARN  = 200;
@@ -81,7 +81,7 @@ class Timber {
     Dotenv::load(dirname(dirname(dirname(dirname(dirname(__FILE__))))));
 
     // Require the ENVIRONMENT variable
-    Dotenv::required('ENVIRONMENT', 'TIMBER_CONFIGS');
+    Dotenv::required(array('ENVIRONMENT', 'TIMBER_CONFIGS'));
 
     $this->setConfig( $config );
 
