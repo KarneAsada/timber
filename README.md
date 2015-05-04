@@ -36,7 +36,7 @@ Add the following to your composer.json
     ],
 
     "require" : {
-      "karneasada/timber":"dev-master"
+      "karneasada/timber":"*"
   }
 }
 ```
