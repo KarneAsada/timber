@@ -1,0 +1,20 @@
+{
+    "name": "karneasada/timber",
+    "description": "Another logging class for PHP",
+    "require": {
+        "php": ">=5.3.2",
+        "firephp/firephp-core": "0.4.0",
+        "vlucas/phpdotenv": "1.1.0"
+    },
+    "authors": [
+        {
+            "name": "Dan Karney",
+            "email": "karnage@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Timber": "src/"
+        }
+    }
+}
